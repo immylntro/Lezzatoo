@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.6.6deb5
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Dec 12, 2017 at 09:34 AM
--- Server version: 10.1.28-MariaDB
--- PHP Version: 7.1.10
+-- Host: localhost:3306
+-- Generation Time: Aug 03, 2019 at 12:05 PM
+-- Server version: 5.7.27-0ubuntu0.18.04.1
+-- PHP Version: 7.2.19-0ubuntu0.18.04.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -19,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `restaurant`
+-- Database: `db_restaurant`
 --
 
 -- --------------------------------------------------------
@@ -68,8 +66,7 @@ CREATE TABLE `food` (
 --
 
 INSERT INTO `food` (`id_food`, `name`, `content`, `price`, `last_update`) VALUES
-(1, 'Sate Lilit', '<p><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"/lezzatoo/vendor/source/sate-lilit.jpg\" width=\"300\" height=\"169\" /></p>\r\n<p>makanan khas bali sate lilit adalah..</p>', 50000, '2017-12-03 23:33:15'),
-(2, 'hgdhf', '', 34534, '2017-12-07 22:56:42');
+(1, 'Sate Lilit', '<p><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"/lezzatoo/vendor/source/sate-lilit.jpg\" width=\"300\" height=\"169\" /></p>\r\n<p>makanan khas bali sate lilit adalah..</p>', 50000, '2017-12-03 23:33:15');
 
 -- --------------------------------------------------------
 
@@ -117,11 +114,10 @@ CREATE TABLE `pages` (
 --
 
 INSERT INTO `pages` (`id_page`, `title`, `content`, `last_update`, `link`) VALUES
-(1, 'Alamat Perusahaan', '<p>Alamat :Jalan Sudirman no. xx</p>\r\n<p>Telp : 08256467323</p>\r\n<p>Jam buka :</p>\r\n<p style=\"padding-left: 30px;\">09.00 - 23.00 Wita</p>', '2017-12-03 22:48:43', 'Contact'),
+(1, 'Alamat Perusahaan', '<p>Alamat :Jalan Sudirman no. xx</p>\r\n<p>Telp : 08123456789</p>\r\n<p>Jam buka :</p>\r\n<p style=\"padding-left: 30px;\">09.00 - 23.00 Wita</p>', '2019-08-03 12:01:05', 'Contact'),
 (2, 'Tentang Perusahaan kami', '<p>selamat datang di website lezzatoo restaurant. ini adalah website dinamis pertama kami.</p>', '2017-12-03 22:56:07', 'About'),
-(3, 'Lezzatoo Restaurant', '<p><img src=\"/lezzatoo/vendor/source/sate-lilit.jpg\" alt=\"\" width=\"1280\" height=\"720\" /></p>', '2017-12-06 00:26:28', 'Home'),
-(4, 'Khas Bali', '<p><img src=\"/lezzatoo/vendor/source/Makanan-khas-Bali-1.jpg\" alt=\"\" width=\"1443\" height=\"850\" /></p>', '2017-12-06 00:33:05', 'Home'),
-(5, 'test', '<p>Gambar Kosong</p>', '2017-12-12 01:21:11', 'Home');
+(3, 'Lezzatoo Restaurant', '<p><img src=\"/lezzatoo/vendor/source/sate-lilit.jpg\" alt=\"\" width=\"100%\" height=\"720\" /></p>', '2017-12-06 00:26:28', 'Home'),
+(4, 'Khas Bali', '<p><img src=\"/lezzatoo/vendor/source/Makanan-khas-Bali-1.jpg\" alt=\"\" width=\"1443\" height=\"850\" /></p>', '2017-12-06 00:33:05', 'Home');
 
 -- --------------------------------------------------------
 
@@ -190,25 +186,21 @@ ALTER TABLE `users`
 --
 ALTER TABLE `comment`
   MODIFY `id_comment` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
-
 --
 -- AUTO_INCREMENT for table `food`
 --
 ALTER TABLE `food`
   MODIFY `id_food` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
 --
 -- AUTO_INCREMENT for table `news`
 --
 ALTER TABLE `news`
   MODIFY `id_news` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
 --
 -- AUTO_INCREMENT for table `pages`
 --
 ALTER TABLE `pages`
   MODIFY `id_page` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
 --
 -- Constraints for dumped tables
 --
@@ -224,7 +216,6 @@ ALTER TABLE `comment`
 --
 ALTER TABLE `news`
   ADD CONSTRAINT `fk_id_news` FOREIGN KEY (`username`) REFERENCES `users` (`username`);
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
