@@ -1,0 +1,824 @@
+/*--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+/*end reset*/
+html, body{
+    font-size: 100%;
+	font-family: 'Cabin', sans-serif;
+	background:#596C70;
+}
+h1,h2,h3,h4,h5,h6,a,p{
+	font-family: 'Cabin', sans-serif;
+	margin:0;
+}
+ul,label{
+	margin:0;
+	padding:0;
+}
+body a:hover,body a{
+	text-decoration:none;
+}
+/*-- main --*/
+.agileinfo_login_grid_right a,input[type="submit"],.agile_copy_right p a{
+	transition:.5s ease-in;
+	-webkit-transition:.5s ease-in;
+	-moz-transition:.5s ease-in;
+	-o-transition:.5s ease-in;
+	-ms-transition:.5s ease-in;
+}
+.main{
+	width:60%;
+	margin:4em auto;
+}
+.main h1{
+	font-size:3em;
+    color: #fff;
+    text-align: center;
+}
+.w3_main_grid{
+	margin:3em 0 0;
+}
+.w3_main_grid_left{
+	float:left;
+	width:48%;
+	box-shadow: 0px 0px 15px #212121;
+	-webkit-box-shadow: 0px 0px 15px #212121;
+	-moz-box-shadow: 0px 0px 15px #212121;
+	-o-box-shadow: 0px 0px 15px #212121;
+	-ms-box-shadow: 0px 0px 15px #212121;
+}
+.w3_main_grid_right{
+	float:right;
+	width:48%;
+}
+/*-- sap --*/
+div#horizontalTab ul {
+    background: #30C924;
+	padding: 1em;
+}
+.sap_tabs {
+	margin: 0 auto;
+  -webkit-appearance: none;
+}
+.resp-tab-item{
+	border: none;
+    color: #212121;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0px 21px;
+    border-right: 1px solid #212121;
+    margin: 0px;
+    display: inline-block;
+    list-style: none;
+    outline: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    -webkit-appearance: none;
+}
+.resp-tab-item:hover {
+	background-color:transparent;
+	text-shadow: none;
+    color: #fff;
+}
+.resp-tab-active {
+	text-shadow: none;
+    color: #fff;
+}
+h2.resp-accordion {
+	cursor: pointer;
+	padding: 5px;
+	display: none;
+}
+.resp-tab-content {
+  display: none;
+}
+.resp-content-active, .resp-accordion-active {
+   display: block;
+}
+/*-- //sap --*/
+.w3agile_tab_grid img{
+	display:block;
+}
+.w3agile_tab_grid_sub{
+	padding:2em 3em;
+	background:#fff;
+}
+.w3agile_tab_grid_sub h3{
+	text-align:center;
+	color:#212121;
+	padding-bottom:.5em;
+	position:relative;
+	font-size:1.5em;
+	text-transform: capitalize;
+	margin-bottom:1.5em;
+}
+.w3agile_tab_grid_sub h3:after{
+	content: '';
+    background: #212121;
+    height: 1px;
+    width: 30%;
+    position: absolute;
+    bottom: 0%;
+    left: 36%;
+}
+.w3agile_tab_grid_sub_left{
+	float:left;
+	width:60%;
+}
+.w3agile_tab_grid_sub_right{
+	float:right;
+	width:35%;
+}
+.scrollbar{
+	height: 202px;
+    overflow-y: scroll;
+}
+#style-2::-webkit-scrollbar-track
+{
+	
+	background-color:#fff;
+}
+#style-2::-webkit-scrollbar
+{
+	width:5px;
+	background-color: #fff;
+}
+
+#style-2::-webkit-scrollbar-thumb
+{
+	
+	background-color:#30C924;
+}
+.w3agile_tab_grid_sub_left h4{
+	font-size:1.2em;
+	color:#30C924;
+}
+.w3agile_tab_grid_sub_left p{
+	margin:1em 0;
+	color:#999;
+	line-height:1.8em;
+	font-size:14px;
+}
+.w3agile_tab_grid_sub_left h5{
+	font-size:1em;
+	color:#212121;
+}
+.w3agile_tab_grid_sub_left h5 span{
+	color:#30C924;
+}
+.w3agile_tab_grid_sub_grid:nth-child(3) {
+    margin: 2em 0 0;
+/*-- w3layouts --*/
+}
+.resp-tab-item:last-child {
+    border-right: none;
+}
+.agileinfo_login{
+	background:url(../images/5.jpg) no-repeat 0px 0px;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+	min-height: 270px;
+    padding: 2em 0 0;
+	box-shadow: 0px 0px 15px #212121;
+	-webkit-box-shadow: 0px 0px 15px #212121;
+	-moz-box-shadow: 0px 0px 15px #212121;
+	-o-box-shadow: 0px 0px 15px #212121;
+	-ms-box-shadow: 0px 0px 15px #212121;
+}
+.agileinfo_login h2{
+	font-size: 1.7em;
+    color: #fff;
+    text-align: center;
+    padding: .5em 0;
+    background:rgba(48, 201, 36, 0.63);
+	margin-bottom:1em;
+}
+.agileinfo_login form{
+	width:80%;
+	margin:0 auto;
+}
+.agileinfo_login input[type="text"],.agileinfo_login input[type="password"]{
+	padding: 10px 35px 10px 15px;
+    font-size: 14px;
+    color: #212121;
+    width:85.7%;
+    outline: none;
+    border: 1px solid #D7D7D7;
+    background: rgba(255, 255, 255, 0.8);
+    font-family: 'Cabin', sans-serif;
+}
+.agileinfo_login input[type="text"]{
+	background:url(../images/user.png) no-repeat 335px 11px rgba(255, 255, 255, 0.8);
+	display:block;
+}
+.agileinfo_login input[type="password"]{
+	background:url(../images/key.png) no-repeat 335px 11px rgba(255, 255, 255, 0.8);
+	display:block;
+}
+/*-- agileits --*/
+.agileinfo_login input[type="text"]::-webkit-input-placeholder,.agileinfo_login input[type="password"]::-webkit-input-placeholder{
+	color: #212121 !important;
+}
+.agileinfo_login_grid{
+	margin:1em 0 0;
+}
+.agileinfo_login input[type="password"]{
+	margin:.5em 0 0;
+}
+.agileinfo_login_grid_left{
+	float:left;
+	width:50%;
+}
+.agileinfo_login_grid_left input[type="submit"]{
+	padding: 10px 0px;
+    font-size: 14px;
+    color: #fff;
+    width: 100%;
+    outline: none;
+    border: none;
+    background: #30C924;
+    text-transform: uppercase;
+	font-family: 'Cabin', sans-serif;
+	cursor:pointer;
+}
+.agileinfo_login_grid_left input[type="submit"]:hover{
+	background:#212121;
+}
+.agileinfo_login_grid_right{
+	float: right;
+    width: 50%;
+    text-align: right;
+    margin: .7em 0 0;
+}
+.agileinfo_login_grid_right a{
+	font-size:1em;
+	color:#fff;
+	text-decoration:underline;
+}
+.agileinfo_login_grid_right a:hover{
+	color:#30C924;
+}
+.w3l_restaurants{
+	margin:2em 0 0;
+	background:url(../images/6.jpg) no-repeat 0px 0px;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+/*-- w3layouts --*/
+	-ms-background-size:cover;
+	min-height: 207px;
+    padding:2em;
+	box-shadow: 0px 0px 15px #212121;
+	-webkit-box-shadow: 0px 0px 15px #212121;
+	-moz-box-shadow: 0px 0px 15px #212121;
+	-o-box-shadow: 0px 0px 15px #212121;
+	-ms-box-shadow: 0px 0px 15px #212121;
+}
+.w3l_restaurants_info{
+	background: #fff;
+    padding: 1em;
+    border: 2px solid #30C924;
+	position:relative;
+}
+.w3l_restaurants_info:before{
+	content: '';
+    position: absolute;
+    top: -9.5%;
+    left: 0%;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #30C924;
+}
+.w3l_restaurants_info_left{
+	float:left;
+	width: 50%;
+}
+.w3l_restaurants_info_right{
+	float:right;
+	width: 50%;
+}
+.w3l_restaurants_info_left,.w3l_restaurants_info_right{
+	text-align:center;
+}
+.w3l_restaurants_info h3{
+	font-size: 1.3em;
+    color: #212121;
+    text-align: center;
+    position: relative;
+    padding-bottom: .5em;
+    margin:0em 0 .8em;
+}
+.w3l_restaurants_info h3:before{
+	content: '';
+    background: #30C924;
+    height: 1px;
+    width: 20%;
+    position: absolute;
+/*-- agileits --*/
+    bottom: 0%;
+    left: 40%;
+}
+.w3l_restaurants_info p{
+	font-size: 14px;
+    color: #999;
+    line-height: 1.8em;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.agile_copy_right{
+	margin:3em 0 0;
+	text-align:center;
+}
+.agile_copy_right p{
+	color:#FFFFFF;
+	font-size:1em;
+	line-height:1.8em;
+}
+.agile_copy_right p a{
+	color:#30C924;
+	text-decoration:none;
+}
+.agile_copy_right p a:hover{
+	color:#fff;
+}
+/*-- //main --*/
+/*-- start-responsive-design --*/
+@media (max-width:1680px){
+	.w3agile_tab_grid_sub {
+		padding: 1.5em;
+	}
+	.scrollbar {
+		height: 200px;
+	}
+	.w3agile_tab_grid_sub h3 {
+		margin-bottom: 0.5em;
+	}
+	.resp-tab-item {
+		padding: 0px 28px;
+	}
+	.agileinfo_login input[type="text"], .agileinfo_login input[type="password"] {
+		width: 86.7%;
+	}
+}
+@media (max-width:1600px){
+	.w3agile_tab_grid_sub {
+		padding: 2em 3em;
+	}
+	.scrollbar {
+		height: 202px;
+	}
+	.w3agile_tab_grid_sub h3 {
+		margin-bottom: 1.5em;
+	}
+	.resp-tab-item {
+		padding: 0px 24px;
+	}
+	.agileinfo_login input[type="text"], .agileinfo_login input[type="password"] {
+		width: 85.7%;
+	}
+}
+@media (max-width:1440px){
+	.main {
+		width: 62%;
+	}
+	.resp-tab-item {
+		padding: 0px 21px;
+	}
+	.agileinfo_login input[type="text"], .agileinfo_login input[type="password"] {
+		width: 84.7%;
+	}
+	.agileinfo_login input[type="text"] {
+		background: url(../images/user.png) no-repeat 315px 11px rgba(255, 255, 255, 0.8);
+	}
+	.agileinfo_login input[type="password"] {
+		background: url(../images/key.png) no-repeat 315px 11px rgba(255, 255, 255, 0.8);
+	}
+	.w3agile_tab_grid_sub_grid:nth-child(3) {
+		margin: 2.5em 0 0;
+	}
+	.scrollbar {
+		height: 188px;
+	}
+	.w3agile_tab_grid_sub {
+		padding: 3em 3em;
+	}
+}
+@media (max-width: 1366px){
+	.resp-tab-item {
+		padding: 0px 18px;
+	}
+	.scrollbar {
+		height: 223px;
+	}
+	.w3agile_tab_grid_sub {
+		padding: 2.5em 3em;
+	}
+	.agileinfo_login input[type="text"], .agileinfo_login input[type="password"] {
+		width: 84%;
+	}
+	.agileinfo_login input[type="text"] {
+		background: url(../images/user.png) no-repeat 295px 11px rgba(255, 255, 255, 0.8);
+	}
+	.agileinfo_login input[type="password"] {
+		background: url(../images/key.png) no-repeat 295px 11px rgba(255, 255, 255, 0.8);
+	}
+}
+@media (max-width: 1280px){
+	.main {
+		width: 66%;
+	}
+	.agileinfo_login input[type="text"], .agileinfo_login input[type="password"] {
+		width: 83.7%;
+	}
+	.agileinfo_login input[type="text"] {
+		background: url(../images/user.png) no-repeat 293px 11px rgba(255, 255, 255, 0.8);
+	}
+	.agileinfo_login input[type="password"] {
+		background: url(../images/key.png) no-repeat 293px 11px rgba(255, 255, 255, 0.8);
+	}
+}
+@media (max-width: 1080px){
+	.main h1 {
+		font-size: 2.7em;
+	}
+	.main {
+		width: 79%;
+	}
+}
+@media (max-width: 1024px){
+	.main {
+		width: 83%;
+	}
+}
+@media (max-width:991px){
+	.resp-tab-item {
+		padding: 0px 16px;
+	}
+	.w3agile_tab_grid_sub {
+		padding: 2.5em 2em;
+	}
+	.w3l_restaurants_info p {
+		width: 100%;
+	}
+	.scrollbar {
+		height: 223px;
+	}
+	.w3agile_tab_grid_sub {
+		padding: 2.5em 2em;
+	}
+	.agileinfo_login input[type="text"], .agileinfo_login input[type="password"] {
+		width: 83%;
+	}
+	.agileinfo_login input[type="text"] {
+		background: url(../images/user.png) no-repeat 280px 11px rgba(255, 255, 255, 0.8);
+	}
+	.agileinfo_login input[type="password"] {
+		background: url(../images/key.png) no-repeat 280px 11px rgba(255, 255, 255, 0.8);
+	}
+}
+@media (max-width:800px){
+	.main h1 {
+		font-size: 2.5em;
+	}
+	.main {
+		width: 95%;
+	}
+	.w3_main_grid_left,.w3_main_grid_right {
+		width: 48.5%;
+	}
+	.resp-tab-item {
+		padding: 0px 13px;
+	}
+	.agileinfo_login h2 {
+		font-size: 1.4em;
+	}
+	.agileinfo_login form {
+		width: 90%;
+	}
+	.agileinfo_login input[type="text"], .agileinfo_login input[type="password"] {
+		width: 83.5%;
+	}
+	.w3l_restaurants {
+		margin: 1.5em 0 0;
+	}
+	.agileinfo_login {
+		min-height: 250px;
+	}
+	.w3agile_tab_grid_sub_left {
+		width: 62%;
+	}
+	.w3agile_tab_grid_sub {
+		padding:2.4em 1.8em;
+	}
+}
+@media (max-width:768px){
+	.resp-tab-item {
+		padding: 0px 11px;
+	}
+	.main h1 {
+		font-size: 2.3em;
+	}
+	.main {
+		margin: 3em auto;
+	}
+	.agileinfo_login input[type="text"], .agileinfo_login input[type="password"] {
+		width: 83.3%;
+	}
+	.w3l_restaurants {
+		padding: 1.7em;
+	}
+	.w3agile_tab_grid_sub h3 {
+		margin-bottom: 1em;
+	}
+	.w3agile_tab_grid_sub {
+		padding: 2.4em 1.6em;
+	}
+	.scrollbar {
+		height: 210px;
+	}
+	.w3agile_tab_grid_sub_left {
+		width: 63%;
+	}
+}
+@media (max-width: 736px){
+	.resp-tab-item {
+		padding: 0px 9px;
+	}
+	.w3agile_tab_grid_sub_left h5 {
+		font-size: .9em;
+	}
+	.agileinfo_login input[type="text"], .agileinfo_login input[type="password"] {
+		width: 82.5%;
+	}
+	.agileinfo_login input[type="text"] {
+		background: url(../images/user.png) no-repeat 270px 11px rgba(255, 255, 255, 0.8);
+	}
+	.agileinfo_login input[type="password"] {
+		background: url(../images/key.png) no-repeat 270px 11px rgba(255, 255, 255, 0.8);
+	}
+}
+@media (max-width:667px){
+	.resp-tab-item {
+		padding: 0px 7.4px;
+		font-size: 13px;
+	}
+	.main h1 {
+		font-size: 2em;
+	}
+	.agileinfo_login h2 {
+		font-size: 1.2em;
+	}
+	.agileinfo_login {
+		min-height: 225px;
+		padding: 1em 0 0;
+	}
+	.agileinfo_login input[type="text"], .agileinfo_login input[type="password"] {
+		width: 80.7%;
+	}
+	.agileinfo_login input[type="text"] {
+		background: url(../images/user.png) no-repeat 240px 11px rgba(255, 255, 255, 0.8);
+	}
+	.agileinfo_login input[type="password"] {
+		background: url(../images/key.png) no-repeat 240px 11px rgba(255, 255, 255, 0.8);
+	}
+	.agileinfo_login_grid_right a {
+		font-size: 14px;
+	}
+	.w3l_restaurants_info h3 {
+		font-size: 1.1em;
+		margin: .5em 0;
+	}
+	.w3agile_tab_grid_sub {
+		padding: 2em 1em;
+	}
+}
+@media (max-width:640px){
+	.w3_main_grid_left, .w3_main_grid_right {
+		width: 80%;
+		float: none;
+		margin: 0 auto;
+	}
+	div#horizontalTab ul {
+		padding: 1em 2em;
+	}
+	.resp-tab-item {
+		padding: 0px 23.3px;
+		font-size: 14px;
+	}
+	.w3_main_grid_right {
+		margin:2em auto 0;
+	}
+	.agileinfo_login input[type="text"], .agileinfo_login input[type="password"] {
+		width: 87.7%;
+	}
+	.agileinfo_login input[type="text"] {
+		background: url(../images/user.png) no-repeat 395px 11px rgba(255, 255, 255, 0.8);
+	}
+	.agileinfo_login input[type="password"] {
+		background: url(../images/key.png) no-repeat 395px 11px rgba(255, 255, 255, 0.8);
+	}
+}
+@media (max-width: 600px){
+	.resp-tab-item {
+		padding: 0px 19.5px;
+	}
+	.w3agile_tab_grid_sub {
+		padding: 2em;
+	}
+	.scrollbar {
+		height: 200px;
+	}
+	.agileinfo_login input[type="text"], .agileinfo_login input[type="password"] {
+		width: 87%;
+	}
+	.agileinfo_login input[type="text"] {
+		background: url(../images/user.png) no-repeat 372px 11px rgba(255, 255, 255, 0.8);
+	}
+	.agileinfo_login input[type="password"] {
+		background: url(../images/key.png) no-repeat 372px 11px rgba(255, 255, 255, 0.8);
+	}
+}
+@media (max-width:568px){
+	.w3_main_grid {
+		margin: 2em 0 0;
+	}
+	.w3_main_grid_left, .w3_main_grid_right {
+		width: 85%;
+	}
+}
+@media (max-width:480px){
+	.main {
+		margin: 2em auto;
+	}
+	.w3_main_grid_left, .w3_main_grid_right {
+		width: 95%;
+	}
+	.resp-tab-item {
+		padding: 0px 15.9px;
+	}
+	.w3agile_tab_grid_sub h3 {
+		font-size: 1.3em;
+	}
+	.scrollbar {
+		height: 180px;
+	}
+	.w3_main_grid_right {
+		margin: 1.5em auto 0;
+	}
+	.agileinfo_login input[type="text"], .agileinfo_login input[type="password"] {
+		width: 86%;
+	}
+	.agileinfo_login input[type="text"] {
+		background: url(../images/user.png) no-repeat 350px 11px rgba(255, 255, 255, 0.8);
+	}
+	.agileinfo_login input[type="password"] {
+		background: url(../images/key.png) no-repeat 350px 11px rgba(255, 255, 255, 0.8);
+	}
+}
+@media (max-width:414px){
+	div#horizontalTab ul {
+		padding: 1em;
+	}
+	.resp-tab-item {
+		padding: 0px 12.9px;
+	}
+	.scrollbar {
+		height: 200px;
+	}
+	.agileinfo_login input[type="text"], .agileinfo_login input[type="password"] {
+		width: 84%;
+	}
+	.agileinfo_login input[type="text"] {
+		background: url(../images/user.png) no-repeat 295px 11px rgba(255, 255, 255, 0.8);
+	}
+	.agileinfo_login input[type="password"] {
+		background: url(../images/key.png) no-repeat 295px 11px rgba(255, 255, 255, 0.8);
+	}
+}
+@media (max-width:384px){
+	.resp-tab-item {
+		padding: 0px 11.4px;
+		font-size: 13px;
+	}
+	.main h1 {
+		font-size: 1.8em;
+	}
+	.agileinfo_login input[type="text"], .agileinfo_login input[type="password"] {
+		width: 82.7%;
+	}
+	.agileinfo_login input[type="text"] {
+		background: url(../images/user.png) no-repeat 273px 11px rgba(255, 255, 255, 0.8);
+	}
+	.agileinfo_login input[type="password"] {
+		background: url(../images/key.png) no-repeat 273px 11px rgba(255, 255, 255, 0.8);
+	}
+	.agile_copy_right p {
+		font-size: 14px;
+		padding: 0 1em;
+	}
+	.agile_copy_right {
+		margin: 2em 0 0;
+	}
+}
+@media (max-width:375px){
+	div#horizontalTab ul {
+		padding: 0;
+	}
+	.resp-tab-item {
+		padding: .5em 0;
+		font-size: 14px;
+		display: block;
+		background: #30C924;
+		border: none;
+		border-bottom: 1px solid #DB880B;
+		text-align: center;
+	}
+	.w3agile_tab_grid_sub {
+		padding: 1.5em;
+	}
+	.agileinfo_login input[type="text"], .agileinfo_login input[type="password"] {
+		width: 82%;
+	}
+	.agileinfo_login input[type="text"] {
+		background: url(../images/user.png) no-repeat 264px 11px rgba(255, 255, 255, 0.8);
+	}
+	.agileinfo_login input[type="password"] {
+		background: url(../images/key.png) no-repeat 264px 11px rgba(255, 255, 255, 0.8);
+	}
+}
+@media (max-width: 320px){
+	.main h1 {
+		font-size: 1.6em;
+	}
+	.w3agile_tab_grid_sub h3 {
+		font-size: 1.2em;
+	}
+	.w3agile_tab_grid_sub_left h4 {
+		font-size: 1em;
+	}
+	.w3agile_tab_grid_sub_left {
+		width: 64%;
+	}
+	.w3agile_tab_grid_sub_left h5,.w3l_restaurants_info p,.agile_copy_right p,.w3agile_tab_grid_sub_left p,.agileinfo_login_grid_left input[type="submit"],.agileinfo_login_grid_right a {
+		font-size: 13px;
+	}
+	.w3agile_tab_grid_sub {
+		padding: 1.5em 1em;
+	}
+	.scrollbar {
+		height: 185px;
+	}
+	.agileinfo_login input[type="text"], .agileinfo_login input[type="password"] {
+		width: 79%;
+		font-size: 13px;
+	}
+	.agileinfo_login input[type="text"] {
+		background: url(../images/user.png) no-repeat 221px 11px rgba(255, 255, 255, 0.8);
+	}
+	.agileinfo_login input[type="password"] {
+		background: url(../images/key.png) no-repeat 221px 11px rgba(255, 255, 255, 0.8);
+	}
+	.w3l_restaurants {
+		padding: 1.3em;
+	}
+	.w3l_restaurants_info:before {
+		top: -6.5%;
+		border-left: 15px solid transparent;
+		border-right: 15px solid transparent;
+		border-bottom: 15px solid #30C924;
+	}
+}
